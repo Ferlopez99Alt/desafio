@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: #ffffff;
+  padding-top: 54.19px;
+  font-size: 1.2em;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.3rem 0;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.navbar-brand img {
+  height: 35px;
+}
+
+.navbar .nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.seleccion-nav {
+  color: #00377B;
+  font-weight: bold;
+}
+
+/* --- BANNERS DE CABECERAS  --- */
+.imagencontacto_fondo {
+  margin-top: 2em;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2019/01/5-lugares-tur%C3%ADsticos-cerca-de-San-Salvador-perfectos-para-un-d%C3%ADa-de-escape.png')
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 20em;
+}
+
+.imagensitio1_fondo {
+  margin-top: 1em;
+  background: url('https://elsalvador.travel/system/wp-content/uploads/2024/03/volcan-conchagua01.png')
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 25em;
+}
+
+.imagensitio2_fondo{
+  margin-top: 1em;
+  background: url('https://elsalvador.travel/system/wp-content/uploads/2022/01/Cerro-Verde-Drone-CAPRES-4.jpg')
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 25em;
+}
+
+.imagensitio3_fondo{
+  margin-top: 1em;
+  background: url('https://elsalvador.travel/system/wp-content/uploads/2021/04/10012021-El-Imposible-APPEX-5.jpg')
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 25em;
+}
+
+#encabezadositios {
+  color: #00377B;
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  margin-block: 1em;
+  font-weight: uppercase;
+}
+
+h2{
+  color: #00377B;
+  font-weight: bolder;
+  margin-block: 1em;
+}
+
+h3{
+  color: #00377B;
+  font-weight: bolder;
+  margin-block: 1em;
+}
+
+h5{
+  color: #00377B;
+  font-weight: bolder;
+  margin-block: 1em;
+}
+
+#actividad-lista {
+  list-style-type: none;
+}
+
+
+/* --- CARD CONTACTOS --- */
+#card-contacos {
+  transition: transform 0.3s;
+}
+
+#card-contactos:hover {
+  transform: scale(1.09);
+}
+
+/* --- FORMULARIO Y CAMPOS CONTACTOS --- */
+main {
+  padding: 40px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.campo-formulario {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* --- BOTÓNES CONTACOS--- */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* --- OTROS --- */
+.linea-separadora {
+  border-bottom: 1px solid #eee;
+  margin: 5px 0 10px;
+}
+
+/*---CARROUSEL SITIOS---*/
+.d-item{
+  height: 400px;
+}
+
+.d-img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/*---ICONOS---*/
+#contenedor-iconos {
+  color: white;
+  font-size: 2em;
+}
+
+#contenedor-iconos img {
+  width: 60px;
+  height: 60px;
+  margin-block: 10px;
+}
+
+/*informacion general*/
+#informacion-general {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/*cards destinos*/
+.destino-card {
+  height: 450px; /* Altura común para todas las tarjetas de destino */
+  display: flex;
+  flex-direction: column;
+}
+
+.destino-card .card-img-top {
+  height: 200px; /* Altura común para las imágenes */
+  object-fit: cover; /* Ajuste común para las imágenes */
+}
+
+.destino-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.destino-card .card-text {
+  margin-bottom: 0;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e0e0e0;
+  margin-top: 40px;
+}
